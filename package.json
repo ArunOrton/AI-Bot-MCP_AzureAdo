@@ -1,0 +1,20 @@
+{
+  "name": "ado-teams-bot-openai",
+  "version": "1.0.0",
+  "description": "Azure DevOps Teams Bot with OpenAI and MCP",
+  "main": "bot-service.js",
+  "scripts": {
+    "start": "node bot-service.js",
+    "start:mcp": "node mcp-server.js",
+    "dev": "concurrently \"npm run start\" \"npm run start:mcp\""
+  },
+  "dependencies": {
+    "openai": "^4.20.0",
+    "botbuilder": "^4.21.0",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
